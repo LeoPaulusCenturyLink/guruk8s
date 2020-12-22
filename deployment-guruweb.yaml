@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: guru
+spec:
+   replicas: 2
+   selector:
+      matchLabels:
+         app: guru
+   template:
+      metadata:
+         labels:
+            app: guru
+      spec:
+         containers:
+            - name: guru
+              image: ardl-dockerhub01:5000/level3/crm.guru:2.29.0.0
+      type: NodePort
+
