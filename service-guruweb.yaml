@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-   name: guru-web
+   name: guruweb
 spec:
    selector:
-      app: guru
+      app: guruweb
    ports:
       - protocol: 'TCP'
         port: 80
