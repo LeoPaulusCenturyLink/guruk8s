@@ -14,4 +14,5 @@ spec:
       spec:
          containers:
             - name: guruweb
-              image: ardl-dockerhub01:5000/level3/crm.guru:latest
+              image: ardl-dockerhub01:5000/level3/crm.guru:2.29.0.0
+              imagePullPolicy: Always
